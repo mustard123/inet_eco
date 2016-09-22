@@ -1,0 +1,54 @@
+# Latex files
+
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.tui
+*.top
+*.tmp
+*.mp
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+*.pdf
+
+# Mac IDE files
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
+
+# Other folders
+/Seminar-Template/Talk1
+/Seminar-Template/Talk2
+/Seminar-Template/Talk3
+/Seminar-Template/Talk4
+/Seminar-Template/Talk5
+/Seminar-Template/Talk6
+/Seminar-Template/Talk7
+/Seminar-Template/Talk9
+/Seminar-Template/Talk10
+/Seminar-Template/Talk8
+/Seminar-Template/Talk12
+
+# Mac finder files and hidden folders
+.DS_Store

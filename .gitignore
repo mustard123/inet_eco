@@ -33,6 +33,7 @@
 *.mtc0
 # Mac IDE files
 *.swp
+*.mtc2
 *~
 *(Autosaved).rtfd/
 Backup[ ]of[ ]*.pages/

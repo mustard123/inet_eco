@@ -5,8 +5,11 @@
 \chaptauthors{Matthias Diez, Christian Ott, Silas Weber}
 
 \Kurzfassung{
-Dies ist der Abstrakt. Er paﬂt ziemlich genau auf diese Seite, ist zumindest
-auf keinen Fall l‰nger.
+	\begin{itemize}
+		\item Explain why IoT and business models for it are relevant
+		\item Present the method that is used to gain the results
+		\item Summarize the results of the paper
+	\end{itemize}
 }
 
 \newpage
@@ -14,7 +17,8 @@ auf keinen Fall l‰nger.
 \minitoc %Das Inhaltsverzeichnis
 
 \newpage
-
+\renewcommand{\labelitemii}{$\diamond$}
+\renewcommand{\labelitemiii}{$\circ$}
 \section{Introduction and Problem Statement}
 	\begin{itemize}
 		\item Introduction into the topic
@@ -23,62 +27,171 @@ auf keinen Fall l‰nger.
 	\end{itemize}
 
 \section{Internet of Things}
-		\begin{itemize}
-			\item Definition(s)
-			\item What we understand as IoT
-		\end{itemize}
+	\begin{itemize}
+		\item Definition(s) \cite{ju}
+		\item Examples of IoT companies
+		\item What we understand as IoT in this paper
+	\end{itemize}
 
 \section{Business Model Frameworks}
-	\subsection{Definitions}
-		\begin{itemize}
-			\item Business 
-			\item Business Model 
-			\item Business Model Framework
-		\end{itemize}
-	\subsection{Magic Triangle}
-	\subsection{Business Model Canvas}
-		\begin{itemize}
-			\item Explain nine Building Blocks
-		\end{itemize}
+	\begin{itemize}
+		\item Definitions \cite{bmc} \cite{dijkman}
+			\begin{itemize}
+				\item Business 
+				\item Business Model 
+				\item Business Model Framework
+			\end{itemize}
+		\item ``Revolutionizing the Business Model'' \cite{gassmann}
+			\begin{itemize}
+				\item Why design Business Models?
+				\item Magic Triangle 
+				\begin{itemize}
+					\item What is the Magic Triangle?
+					\item Why use the Magic Triangle?
+				\end{itemize}
+				\item Creating new Business Model
+				\begin{itemize}
+					\item Initiation
+					\item Ideation
+					\item Integration
+				\end{itemize}
+			\end{itemize}
+		\item ``Business Model Canvas'' \cite{bmc}
+			\begin{itemize}
+				\item What is the canvas used for? How was it developed? How relevant is this framework?
+				\item Explain nine Building Blocks
+				\begin{itemize}
+					\item Value Proposition
+					\item Customer Segments
+					\item Channels
+					\item Customer Relationships
+					\item Key Activities
+					\item Key Resources
+					\item Key Partners
+					\item Revenue Streams
+					\item Cost Structures
+				\end{itemize}
+			\end{itemize}
+	\end{itemize}
 \section{Available IoT Business Model Frameworks}
-		\begin{itemize}
-			\item Changes in Business Models Due To IoT Development
-			\item Optimized BMC for IoT (Dijkman, Sprenkels, Peetres, Janssen)
-			\item Ecosystems  (value vs. individual companies) (Westerlund, Leminen, Rajahonka)
-			\item CISCO: Is there a framework in there? 
-			\item Bosch: Is there a framework in there?
-		\end{itemize}
+	\begin{itemize}
+		\item Explain changes in Business Models due to IoT Development
+			\begin{itemize}
+				\item From ``Business models for the Internet of Things'' \cite{dijkman}
+				\begin{itemize}
+					\item Explains typical types for the Business Model Canvas building blocks for IoT companies
+				\end{itemize}
+				\item From ``Designing Business Models for the Internet of Things'' \cite{westerlund}
+				\begin{itemize}
+					\item Explains how ecosystem business models can be designed (Value Design) to show ``the dynamics between the components'' or ``ow the engine works''
+
+					\begin{enumerate}[I]
+						\item \textbf{Value Drivers}
+						\begin{itemize}
+							\item Individual motivations
+							\item Shared motivations
+						\end{itemize}
+						\item \textbf{Value Nodes}
+						\begin{itemize}
+							\item Actors
+							\item Activities
+							\item (Automated) processes
+						\end{itemize}
+						\item \textbf{Value Exchanges}
+						\begin{itemize}
+							\item Resources
+							\item Knowledge
+							\item Money
+							\item Information
+						\end{itemize}
+						\item \textbf{Value Extracts}
+						\begin{itemize}
+							\item Monetization
+						\end{itemize}					
+					\end{enumerate}
+				\end{itemize}
+				\item From ``IEEE-SA Internet of Things (IoT) Ecosystem Study'' \cite{cisco}
+					\begin{itemize}
+						\item IoT Ecosystem
+							\begin{enumerate}[I]
+								\item \textbf{Where does IoT stand today}
+									\begin{itemize}
+										\item Players
+										\item Market
+										\item Technology
+										\item Standardization
+									\end{itemize}
+								\item \textbf{Business Model View}
+									\begin{itemize}
+										\item New segments
+										\item Open issues / Insufficiency
+									\end{itemize}		
+							\end{enumerate}
+					\end{itemize}
+				\item From ``Business Models and the Internet of Things'' \cite{fleisch}
+					\begin{itemize}
+						\item Based on 55 different business models patterns \cite{gassmann}
+						\item IoT Business Model 1: Digitally Charged Products
+							\begin{itemize}
+								\item A digitally charged product ``links digital services to physical products to create a hybrid bundle that is a single whole.''
+								\item \textbf{Components}
+									\begin{enumerate}[a]
+										\item Business Model View
+										\item Physical Freemium
+										\item Digital Add-on
+										\item Digital Lock-in
+										\item Object Self Service
+										\item Remote Usage and Condition Monitoring
+									\end{enumerate}
+							\end{itemize}
+						\item IoT Business Model 2: Sensor as a Service
+							\begin{itemize}
+								\item A sensor as a service business model is based on ``collecting, processing and selling for a fee the sensor data [...]''.
+							\end{itemize}
+					\end{itemize}
+			\end{itemize}
+	\end{itemize}
+
 \section{Comparison of available IoT Business Model Frameworks}
 	\begin{itemize}
 		\item Text with explanations of differences between frameworks in Chapter 5
-		\item Comparison table along different attributes
-		\item Introduction into case company (fiction)
-		\item Show model for case company for each framework
+		\item If applicable: Comparison table along different attributes
+		\item Introduction into case company (fictitious example)
+		\item Present model of case company for each framework
 	\end{itemize}
+
 \section{Evaluations and Discussion}
 	\begin{itemize} 
-		\item Evaluation of Results - Partly based on outcome of discussion
-		\item Limitations
-		\item Future Work
+		\item Partly based on outcome of discussion within the seminar
+		\item Critical questions regarding the relevance of the results
+		\item How can the conducted comparison help IoT companies to design better business models?
 	\end{itemize}
 
 \section{Summary and Conclusions}
-
-\section{References}
+	\begin{itemize} 
+		\item Summarize the paper content
+		\item Show limitations of the paper
+		\item Give indications for potential future work related to the topic of this paper
+	\end{itemize}
 
 	 \begin{thebibliography}{99}
-% 		 \bibitem {leitfaden} Martin Waldburger, David Hausheer, Burkhard Stiller: \emph{Leitfaden zur Erstellung schriftliche Seminararbeiten}, Communication Systems Group, IFI, University of Zurich, Februar 2007. \url{http://www.csg.uzh.ch/teaching/hs11/inteco/extern/Leitfaden_Seminararbeiten.pdf}
+ 		 \bibitem {gassmann} O. Gassmann, K. Frankenberger, and M. Csik: \emph{Revolutionizing the business model.} in O. Gassmann and F. Schweitzer (Eds.), Management of the Fuzzy Front End of Innovation. Springer, New York, pp. 89-97, 2014, \url{http://link.springer.com/chapter/10.1007%2F978-3-319-01056-4_7}, last visit: October 06, 2016.
 
-% 		 \bibitem {} O. Gassmann, K. Frankenberger, and M. Csik. \emph{Revolutionizing the business model.} in O. Gassmann and F. Schweitzer (Eds.), Management of the Fuzzy Front End of Innovation. Springer, New York, pp. 89-97, 2014. \url{http://link.springer.com/chapter/10.1007%2F978-3-319-01056-4_7} 
+ 		 \bibitem {bmc} Strategyzer AG: \emph{The Business Model Canvas}, \url{http://www.businessmodelgeneration.com/canvas/bmc}, last visit: October 06, 2016.
 
-% 		 \bibitem {} Strategyzer AG: \emph{THe Business Model Canvas}. URL:\url{http://www.businessmodelgeneration.com/canvas/bmc}, last visit \@date 
+ 		 \bibitem {dijkman} R.M. Dijkman, B. Sprenkels, T.Peeters, and A. Janssen: \emph{Business Models for the Internet of Things}, International Journal of Information Management, Vol 35, pp 672-678, 2015.
 
-% [12] Gassmann, O., Frankenberger, K. and Csik, M. (2014) Revolutionizing the Business Model. In: Gassmann, O. and
-% Schweitzer, F., Eds., Management of the Fuzzy Front End of Innovation, Springer, New York, 89-98.
-% http://dx.doi.org/10.1007/978-3-319-01056-4_7
-% [13] Hui, G. (2014) How the Internet of Things Changes Business Models. Harvard Business Review.
-% Westerlund, M., Leminen, S. and Rajahonka, M. (2014) Designing Business Models for the Internet of Things. Technology
-% Innovation Management Review, 4, 5-14.
+ 		 \bibitem {fleisch} E. Fleisch, M. Winberger, F. Wortmann: \emph{Business Models and the Internet of Things}, Bosch Internet of Things & Services Lab, pp 1-19, August 2014, \url{http://www.iot-lab.ch/?page_id=10543}, last visit: October 06, 2016.
+
+ 		 \bibitem {rossi} B. Rossi: \emph{How the Internet of Things is Changing Business Models}, Information Age - Insight and analysis for IOT leaders, May 4, 2016 \url{http://www.information-age.com/it-management/strategy-and-innovation/123461371/how-internet-things-changes-business-models}, last visit: October 06, 2016.
+
+ 		 \bibitem {hui} G. Hui: \emph{How the Internet of Things Changes Business Models}, Harvard Business Review, July 24, 2014, \url{https://hbr.org/2014/07/how-the-internet-of-things-changes-business-models}, last visit: October 06, 2016.
+
+ 		 \bibitem {cisco} CISCO: \emph{IEEE-SA Internet of Things Ecosystem Study}, IEEE Standards Association, New York, 2015, \url{http://www.cisco.com/c/dam/en/us/solutions/collateral/industry-solutions/dlfe-670918525.pdf}, last visit: October 06, 2016.
+
+ 		\bibitem {westerlund} M. Westerlund, S. Leminen and M. Rajahonka: \emph{Designing Business Models for the Internet of Things} Technology Innovation Management Review, July 2014, \url{http://timreview.ca/article/807}, last visit: October 06, 2016.
+
+ 		\bibitem {ju} Jaehyeon Ju, Mi-Seon Kim and Jae-Hyeon Ahn: \emph{Prototyping Business Models for IoT Service}, Procedia Computer Science, 91, pp. 882 - 890, 2016, \url{http://www.sciencedirect.com/science/article/pii/S1877050916312911}, last visit: October 06, 2016.
 	 \end{thebibliography}
 
 

@@ -1,15 +1,18 @@
 %!TEX root = ../talk.tex
+\newcommand{\todo}[2][red]{\textcolor{#1}{#2}}
 
 \chapter{Comparison of IoT Business Model}
 \markboth{Comparison of IoT Business Model}{}
 \chaptauthors{Matthias Diez, Christian Ott, Silas Weber}
 
 \Kurzfassung{
-	\begin{itemize}
-		\item Explain why IoT and business models for it are relevant
-		\item Present the method that is used to gain the results
-		\item Summarize the results of the paper
-	\end{itemize}
+	\todo{
+		\begin{itemize}
+			\item Explain why IoT and business models for it are relevant
+			\item Present the method that is used to gain the results
+			\item Summarize the results of the paper
+		\end{itemize}
+	}
 }
 
 \newpage
@@ -31,6 +34,7 @@
 
 	Even though the term ``Internet of Things'' is currently used by everyone, there is no common consent about its definition. The International Telecommunication Union (ITU) defined IoT 2012 in a recommendation as ``a global infrastructure for the information Society, enabling advanced services by interconnecting (physical and virtual) things based on, existing and evolving, inter-operable information and communication technologies'' \cite{itu}. Besides their view on IoT, other definitions were built, Atzori et al. identified three visions how IoT may be seen. As illustrated in Figure~\ref{fig:iot_visions} one is focused on the `things' getting connected over technologies like RFID, WLAN or NCF. The second visions is `Internet oriented', where anything connects with anyone . The third point of view is a `semantic oriented' vision, definitions in this direction can be found in literature. The the semantic oriented vision present thoughts on problems generated through the extremely increased number of connected `things', e.g. the challenging issues related to the representation, storage, interconnection, search and organization of information from IoT \cite{atzori}.\\
 	Due to the differences in these visions, the definitions of IoT established by organizations or entities vary a lot depending on their specific interests, approach taken on the subject as well as their backgrounds. The convergence of these three visions illustrated in Figure~\ref{fig:iot_visions} can be seen as the overall paradigm of IoT, this is also the perspective this paper takes  on in the remaining sections. 
+
 	\begin{figure}[ht]
 	    \begin{center}
 	    \includegraphics[scale=0.35]{Talk11/iot_visions.jpg}
@@ -39,14 +43,15 @@
 	    \label{fig:iot_visions}
     \end{figure}
 
-	The number of worldwide connected `things' is rapidly growing, in 2016 Gartner predicted up to 6.4 billion connected devices which will reach up to 20.8 billion by 2020 \cite{gartner}. Consequently organizations are more and more involved in IoT-related products, applications and services either in the development or as an investment \cite{ju}. Google acquired Nest for \$3.2 billion, a quickly growing smart thermostat company. Samsung bought SmartTings, an open smart home platform []. A lot of IoT companies emerge like LiFX as smart bulb company [] or TODO. Telecommunication organizations invest in future technologies like 5G which was discussed in chapter ?? of this seminar report. Governments increasingly acknowledge the importance of IoT, the United States supported a Smart Cities Initiative with \$160 million [], the Korean government planned \$5 billion investments in various IoT projects until 2020 []. The investments driven by national institutions as well as aggressive investments by companies in IoT would ``create new business opportunities and substantial social and economic benefits''[]. 
+	The number of worldwide connected `things' is rapidly growing, in 2016 Gartner predicted up to 6.4 billion connected devices which will reach up to 20.8 billion by 2020 \cite{gartner}. Consequently organizations are more and more involved in IoT-related products, applications and services either in the development or as an investment \cite{ju}. Google acquired Nest for \$3.2 billion, a quickly growing smart thermostat company. Samsung bought SmartTings, an open smart home platform []. A lot of IoT companies emerge like LiFX as smart bulb company \todo{[] or TODO}. Telecommunication organizations invest in future technologies like 5G which was discussed in chapter \todo{??} of this seminar report. Governments increasingly acknowledge the importance of IoT, the United States supported a Smart Cities Initiative with \$160 million \todo{[]}, the Korean government planned \$5 billion investments in various IoT projects until 2020 \todo{[]}. The investments driven by national institutions as well as aggressive investments by companies in IoT would ``create new business opportunities and substantial social and economic benefits''\todo{[]}. 
 
-	Even though there is no concrete definition what IoT is, there is some consent about the architecture of IoT. A Three layered application stack can be found in various research literature albeit the layers may be named differently they are semantically comparable [fleisch, ju, wortmann, ]. A `thing' layer, which means a hardware-based sensing layer, it has the function to identify objects and collect information through sensors over short-rang and local networks \cite{ju}.\\
+	Even though there is no concrete definition what IoT is, there is some consent about the architecture of IoT. A Three layered application stack can be found in various research literature albeit the layers may be named differently they are semantically comparable \todo{[fleisch, ju, wortmann, ]}. A `thing' layer, which means a hardware-based sensing layer, it has the function to identify objects and collect information through sensors over short-rang and local networks \cite{ju}.\\
 	The network layer transmits real-time data. It interconnects not only people to `things' but allows also an information flow between `things' autonomously. The data presented by the network layer can be used by companies to provide optimized and personalized services \cite{ju}\\
 	The application layer is described by Ju et al. as a ``combination of data processing and intelligence analysis to meet the industry needs to realize an intellectualized industry''. The application layer allows companies to achieve ``different types of intelligent application solutions'' as well as the determination of business strategies\cite{ju}.
 
 	The Internet of Things has a huge potential. On one side are the customers which enjoy new experiences through the new connected world, on the other side are the businesses getting involved in the IoT market, they hope \cite{ju}.\\
-	[TODO: potenzial beschriibe, für business und `private' bi business überleitig zu BM und section BMF ]
+	
+	\todo{TODO: potenzial beschriibe, f�r business und `private' bi business �berleitig zu BM und section BMF}
 
 	\subsection{Cisco Internet of Things}
 		This section takes a look at where business models stand today. Especially for business model frameworks that are built on an ecosystem view, standardization issues come into play. From Cisco's IoT Ecosystem study we look at the following three topics, namely players, market and standardization in regard to the current state of IoT.
@@ -82,7 +87,7 @@
 
 		\item Standardization
 
-		Cisco found that current IoT-specific standardization activities are restricted to specific vertical. This means standardization is only achieved for one specific scope of application for example healthcare, wearables, agriculture etc. This creates so called islands of disjointed and sometimes redundant development.
+		Cisco found that current IoT-specific standardization activities are restricted to specific vertical. This means standardization is only achieved for one specific scope of application for example health care, wearables, agriculture etc. This creates so called islands of disjointed and sometimes redundant development.
 		Such a fragmentation is detrimental to the IoT market. Overcoming and preventing such fragmentations is the challenge. There are some major standard bodies active in IoT like the Institute of Electrical and Electronics Engineers (IEEE) or the World Wide Web Consortium (W3C). But not all of them have global reach.
 		For businesses, application standards will enable interoperability between products.  This is needed for businesses that are part of an ecosystem and rely on interoperability. Furthermore, standardization improves flexibility, so that IoT businesses don't get stuck in specific industry because they are locked in. This flexibility furthers competition between companies which will in the end be beneficial for the end user and society.
 	\end{itemize}
@@ -90,8 +95,8 @@
 \section{Business Model Frameworks}
 \label{sec:bmf}	
 	\subsection{Definitions} 
-		 A \textbf{Business Model} is ``a description of the value a company offers to one or several segments of customers and of the architecture of the firm and its network of partners for creating, marketing and delivering this value and relationship capital, to generate profitable and sustainable revenue streams'' [osterwalder 2005]. The concept of the business model became important in the 1990 as the Internet began to spread and became important since then [22]. There is no commonly accepted view what the business models should include [morris, osterwalder, schweizer]. Achtenhagen et al. stated that there has been a change from ``what business models are'' to ``what business models are for'' \cite{westerlund}. In various literature there seems to exist an agreement that a business model is `the way of doing business' for a particular firm \cite{westerlund}. The heart of each business model stands the goal of minimizing cost and maximizing revenue \cite{ju}.\\
-		 Business models are composed of a variety of components. In business models commonly found components are customer segments, value proposition, channels, customer relationships, revenue streams, key resources, key activities, key partnership and cost structure[ osterwalder 2005]. These Components are the fundamental building blocks of the Business Model Canvas and, thus they are described in detail in Section~\ref{sec:bmc}. \\
+		 A \textbf{Business Model} is ``a description of the value a company offers to one or several segments of customers and of the architecture of the firm and its network of partners for creating, marketing and delivering this value and relationship capital, to generate profitable and sustainable revenue streams'' \todo{[osterwalder 2005]}. The concept of the business model became important in the 1990 as the Internet began to spread and became important since then \todo{[22]}. There is no commonly accepted view what the business models should include \todo{[morris, osterwalder, schweizer]}. Achtenhagen et al. stated that there has been a change from ``what business models are'' to ``what business models are for'' \cite{westerlund}. In various literature there seems to exist an agreement that a business model is `the way of doing business' for a particular firm \cite{westerlund}. The heart of each business model stands the goal of minimizing cost and maximizing revenue \cite{ju}.\\
+		 Business models are composed of a variety of components. In business models commonly found components are customer segments, value proposition, channels, customer relationships, revenue streams, key resources, key activities, key partnership and cost structure \todo{[osterwalder 2005]}. These Components are the fundamental building blocks of the Business Model Canvas and, thus they are described in detail in Section~\ref{sec:bmc}. \\
 
 		 A \textbf{Business Model Framework} is a tool to help a company in the development of its business model by presenting an overview over the business model components described above \cite{dijkman}.
 
@@ -165,10 +170,16 @@
 \label{sec:bmf_available}
 	In this chapter, we will present and discuss different IoT Business Model Frameworks that are currently available in research papers.
 	\subsection{IoT Business Model Patterns (Fleisch et. al, 2014)}
-		Specific business model patterns can be found in the IoT environment were described in \cite{fleisch}. This is a good starting point to find out what areas an IoT business model framework has to cover. The analysis of 55 distinct business model patterns from Gassmann et al. \cite{gassmann55} yields two novel business model patterns that can be applied to an IoT business: `Digitally Charged Products' and `Sensor as a Service'.
+		Specific business model patterns that can be found in the IoT environment are described Fleisch et al. \cite{fleisch}. This white paper is a good starting point to find out what areas a relavant IoT business model framework has to cover. The analysis of 55 distinct business model patterns from Gassmann et al. \cite{gassmann55} yields two novel business model patterns that can be applied to a IoT business ideas: `Digitally Charged Products' and `Sensor as a Service'.
 
 		The pattern of a `Digitally Charged Products' is described as ``classic physical products are charged with a bundle
-		of new sensor-based digital services and positioned with new value propositions'' in \cite[p. 10]{fleisch}. The components that cab be used and combined are ``Physical Freemium'' (free digital service with a paid product and offering paid premium services), ``Digital Add-on'' (digital services are sold to customer on an add-on basis to increase the value of the base product), ``Digital Lock-in'' (limit the digital compatibility), ``Product as Point of Sales'', ``Object Self Service'', ``Remote Usage and Condition Monitoring''. 
+		of new sensor-based digital services and positioned with new value propositions'' \cite[p. 10]{fleisch}. The components that can be used and combined are ``Physical Freemium'' (free digital service with a paid product and offering paid premium services), ``Digital Add-on'' (digital services are sold to customer on an add-on basis to increase the value of the base product), ``Digital Lock-in'' (limit the digital compatibility), ``Product as Point of Sales'' (shop becomes integrated into the product), ``Object Self Service'' (things can order themselves directly), ``Remote Usage and Condition Monitoring'' (data about status and environment can be sent in real-time). This business model pattern with its six components embodies ``idea that the Internet of Things in its applications links digital services to physical products to create a hybrid bundle that is a single whole'' \cite[p. 11]{fleisch}. 
+
+		The second pattern presented is named ``Sensor as a Service''. It's based around the business idea of ``collecting, processing and selling for a fee the sensor data from one subsection to other subsections'' \cite[p. 11]{fleisch}. The data gathered by the sensors is moved into the focus, instead of the sensor or product itself as in the pattern ``Digitally Charged Products''. Instead of collecting the data for one application only, it can be sold in a multi-sided market to many different stakeholders.
+
+		As point out, Fleisch et al. do not deliver a 
+
+		\todo{TODO: explain in more detail?, explain layer model? (maybe rather in introduction?)}
 
 	\subsection{Adapted Business Model Canvas for IoT (Dijkman et al., 2015)}
 		Dijkman et al. analyzed current research literature in order to create a business model framework for IoT applications. They searched for papers that contained the phrasing ``Internet of Things'' together with ``business model'', from the resulting 20 papers were 5 papers selected, only the ones that contained actual business models \cite{dijkman}. Two of the five papers were based on the business model canvas described in Section~\ref{sec:bmc}.\\
@@ -185,9 +196,11 @@
 		\end{figure}
 
 		Based on the interviews and a survey, the relative importance of each building block was determined. Dijkman et al.'s work showed, that `value proposition' is most important in IoT business models. Furthermore, `customer relationship' and `key  partnerships' were also considered as more important by the interviewees, all other blocks had comparable importance results with  `channels' being a bit less important.\\    
-		[TODO: wrapup][TODO: explain most significant building block types in detail]
+		
+		\todo{TODO: wrapup}
+		\todo{TODO: explain most significant building block types in detail}
 
-	\subsection{Value Design (Westerlund et al., 2014)}
+	\subsection{Ecosystem Business Model Value Pillars (Westerlund et al., 2014)}
 		Westerlund et al. moves from seeing IoT mainly as a technology platform to viewing it as a business ecosystem. Thus there is a shift from the traditional business model of a firm to designing ecosystem business models. Such an ecosystem business model is composed of value pillars, creating and capturing value. They identified three major challenges for designing ecosystem business models namely diversity of objects, immaturity of innovation and unstructured ecosystems.
 
 		As businesses from centralized toward decentralized and distributed network structures, they become part of a complex business ecosystems. A business ecosystem can be seen an organization of economic actors. Those actors' business activities are anchored around a platform. It's is argued that such systems are more than the sum of its part and hence ``operations of the system cannot be understood by studying its parts detached from the entity'' \cite{westerlund}.
@@ -226,45 +239,39 @@
 
 	\subsection{Three-dimensional collaborator Model (Chan, 2015)}
 
-	The three dimensional collaborator model presented by Chan \cite{chan} builds on on a model described by Holler et al. \cite{holler}. The three dimensions of Chan's model are Who, Where and Why. On first sight, those dimensions seems similar to the nodes in Gassmann's et al. magic triangle proposition but the differences become evident once the meaning behind the three dimensions is investigated. The `Who' describes the collaborating partners that build the value network. The `Where' refers to sources of value co-creation and lastly the `Why' describes how partners actually benefit from collaborating withing the value network \cite{chan}. Figure \ref{Chan framework} shows the table of the proposed framework.
+		The three dimensional collaborator model presented by Chan \cite{chan} builds on on a model described by Holler et al. \cite{holler}. The three dimensions of Chan's model are Who, Where and Why. On first sight, those dimensions seems similar to the nodes in Gassmann's et al. magic triangle proposition but the differences become evident once the meaning behind the three dimensions is investigated. The `Who' describes the collaborating partners that build the value network. The `Where' refers to sources of value co-creation and lastly the `Why' describes how partners actually benefit from collaborating withing the value network \cite{chan}. Figure \ref{Chan framework} shows the table of the proposed framework.
 
-			\begin{figure}[ht]
-			    \begin{center}
-			    \includegraphics[scale=0.5]{Talk11/chan.png}
-			    \end{center}
-			    \caption{Chan's business model framework}
-			    \label{Chan framework}
-			\end{figure}
+		\begin{figure}[ht]
+		    \begin{center}
+		    \includegraphics[scale=0.5]{Talk11/chan.png}
+		    \end{center}
+		    \caption{Chan's business model framework}
+		    \label{Chan framework}
+		\end{figure}
 
-	Chan applied his framework on multiple case studies to explore the why, what and how elements of the business model. A look at one example of the Hong Kong Communications Co., Ltd (HKC) company helps to understand how the framework can be filled out for a use case. The Wong Tai Sin Temple in Hong Kong is a popular tourist attraction. With over 5 million visitors per year, the information board at the temple containing detailed information about the temple's history becomes inaccessible to many visitor during peak seasons. Due to the lack of communication system, the management was unable to estimate the visitor count and allocating the required manpower. With the help of a real time location tracking system and a mobile application, visitors have now access to self-serving tour guide services. The free mobile app allows customers to access introductory videos an information at each attraction point without the assistance of tourist guides \cite[p. 560]{chan}. 
+		Chan applied his framework on multiple case studies to explore the why, what and how elements of the business model. A look at one example of the Hong Kong Communications Co., Ltd (HKC) company helps to understand how the framework can be filled out for a use case. The Wong Tai Sin Temple in Hong Kong is a popular tourist attraction. With over 5 million visitors per year, the information board at the temple containing detailed information about the temple's history becomes inaccessible to many visitor during peak seasons. Due to the lack of communication system, the management was unable to estimate the visitor count and allocating the required manpower. With the help of a real time location tracking system and a mobile application, visitors have now access to self-serving tour guide services. The free mobile app allows customers to access introductory videos an information at each attraction point without the assistance of tourist guides \cite[p. 560]{chan}. 
 
-			\begin{figure}[ht]
-			    \begin{center}
-			    \includegraphics[scale=0.5]{Talk11/chanexample.png}
-			    \end{center}
-			    \caption{Chan's business model framework}
-			    \label{Chan exmaple}
-			\end{figure}
+		\begin{figure}[ht]
+		    \begin{center}
+		    \includegraphics[scale=0.5]{Talk11/chanexample.png}
+		    \end{center}
+		    \caption{Chan's business model framework}
+		    \label{Chan exmaple}
+		\end{figure}
 
-	Figure \ref{Chan exmaple} shows the according business model. Interesting are the fields strategy and tactic. Li et al.,(2012) \cite{li} proposed four IoT strategy categories which are adapted by Chan in the use cases for his three dimensional business model framework. The categories are: get-ahead strategy in market, catch-up strategy in market, get-ahead strategy in technology, and catch-up strategy in technology. Get-ahead strategies enable the firm to stay ahead of other competitors, giving them to first mover advantage. Catch-up strategies on the other hand follow and learn from the industrial leaders by operational efficiency and quality \cite{chan}.
-	Besides strategy, the business model framework contains the component tactic. Six components of the digitally charged products by Fleisch et al.\cite{fleisch} enrich the framework:
+		Figure \ref{Chan exmaple} shows the according business model. Interesting are the fields strategy and tactic. Li et al.,(2012) \cite{li} proposed four IoT strategy categories which are adapted by Chan in the use cases for his three dimensional business model framework. The categories are: get-ahead strategy in market, catch-up strategy in market, get-ahead strategy in technology, and catch-up strategy in technology. Get-ahead strategies enable the firm to stay ahead of other competitors, giving them to first mover advantage. Catch-up strategies on the other hand follow and learn from the industrial leaders by operational efficiency and quality \cite{chan}.
+		Besides strategy, the business model framework contains the component tactic. Six components of the digitally charged products by Fleisch et al.\cite{fleisch} enrich the framework:
 
-\begin{itemize}
-	\item Physical Freemium: physical asset with free digital service, premium charged service offered.
-	\item Digital Add-on: cheap physical asset, digital services can be bought or activated at a high margin.
-	\item Digital lock-in: limit compatibility, high dependency, unable to use another service without high switching costs.
-	\item Product as Point of Sales: physical products become  sites of digital sales and marketing services.
-	\item Object Self-Service: `things' can place orders autonomously over the Internet. 
-	\item Remote Usage and Condition Monitoring: smart things collect and send data in real time which enables real time monitoring and error prevention.
-\end{itemize}
+		\begin{itemize}
+			\item Physical Freemium: physical asset with free digital service, premium charged service offered.
+			\item Digital Add-on: cheap physical asset, digital services can be bought or activated at a high margin.
+			\item Digital lock-in: limit compatibility, high dependency, unable to use another service without high switching costs.
+			\item Product as Point of Sales: physical products become  sites of digital sales and marketing services.
+			\item Object Self-Service: `things' can place orders autonomously over the Internet. 
+			\item Remote Usage and Condition Monitoring: smart things collect and send data in real time which enables real time monitoring and error prevention.
+		\end{itemize}
 
-The three dimensional collaborator model by Chan is less abstract than the ecosystem framework by Westerlund et al. \cite{westerlund}. It is tested and ready to use as the use cases prove.
-
-
-
-
-
-
+		The three dimensional collaborator model by Chan is less abstract than the ecosystem framework by Westerlund et al. \cite{westerlund}. It is tested and ready to use as the use cases prove.
 
 	% \begin{itemize}
 	% 	\item Explain changes in Business Models due to IoT Development
@@ -352,11 +359,8 @@ The three dimensional collaborator model by Chan is less abstract than the ecosy
 
 	However, the ecosystem business model framework may be to abstract to be yet applied to businesses, whereas  Chan's three dimensional collaborator framework proves is usefulness in the use cases. Similar to the ecosystem business model it focuses on the multitude of actor who benefit from each other. Besides the emphasis on collaborators, concrete benefits for all are captured in the model and new components strategy and tactic enrich the model. While traditional business models may work for IoT companies, Chan's  business model framework is specifically tailored for the needs of IoT companies. Sticking to the business model canvas, Dijkman et al. \cite{dijkman} don't bring a new framework per se, but rather show relative importance of the individual building blocks. Unsurprisingly, the value proposition building block has by far the highest relative importance compared to the other block. Generally speaking an emphasis on value creation and capture as well as an emphasis on a more networked environment can be observed. Hui \cite{hui} states that in industries that are becoming connected, differentiation, cost, and focus are no longer mutually exclusive but rather can be mutually reinforcing in creating and capturing value.
 
-
-
-
 	\subsection{Introduction to the case study company}
-	Our case study company is called `FlexSpace' that offers a integrated beacon and software solution for companies to make the usage of companies' office space more flexible by showing the available desk places in an office to employees. This allows the customer companies to increase the usage of their office and thereby reduce the square meters per employee which directly saves money for the company. A beacon is a miniature, battery-powered sender that usually uses the Bluetooth Low Energy (BLE) technology to communicate with nearby devices. These beacons allow to let the employees check-in at their desk using their smartphones. `FlexSpace' offer the installation and maintenance of the described beacon infrastructure at customer sites as well as a white-label mobile application for their customers. The application displays the available desk places and enables the user to check-in at a specific desk using the closest beacon available. The visual appearance can be customized per customer to fit the customer company's corporate design.
+		Our case study company is called `FlexSpace' that offers a integrated beacon and software solution for companies to make the usage of companies' office space more flexible by showing the available desk places in an office to employees. This allows the customer companies to increase the usage of their office and thereby reduce the square meters per employee which directly saves money for the company. A beacon is a miniature, battery-powered sender that usually uses the Bluetooth Low Energy (BLE) technology to communicate with nearby devices. These beacons allow to let the employees check-in at their desk using their smartphones. `FlexSpace' offer the installation and maintenance of the described beacon infrastructure at customer sites as well as a white-label mobile application for their customers. The application displays the available desk places and enables the user to check-in at a specific desk using the closest beacon available. The visual appearance can be customized per customer to fit the customer company's corporate design.
 
 	%\subsection{IoT Business Model Patterns (Fleisch et. al, 2014)}
 
@@ -389,7 +393,16 @@ The three dimensional collaborator model by Chan is less abstract than the ecosy
 	`Revenue Streams'
 
 	It can be seen that a big part of the proposed framework was used in the generation of the business model. The missing parts were excluded e.g. due to different selling models (no licensing) or different distribution channels (no partner stores). The resulting business model is already specific enough to be useful for the creation of the `FlexZone' business. 
-	\subsection{Value Design (Westerlund et al., 2014)}
+	\subsection{Ecosystem Business Model Value Pillars (Westerlund et al., 2014)}
+		Westerlund et al. suggest ``that managers need to shift their focus from `the business model' of a firm" to `ecosystem business models''' \cite[p. 8]{westerlund}. The application of the framework proposed by them leads us to the following business model for FlexSpace:
+
+		Value Drivers: Sustainability (less office space per employee), increased employee satisfaction (employee can choose his own desk place) and availability of usage data
+
+		Value Nodes: FlexSpace Employee, Beacons, Beacon Manufacturer, Beacon Installation Partner, Managers, Employees, Office Usage Application (data processing), Internal IT department
+
+		Value Exchanges: Beacon from manufacturer to Location from employee to beacon, data from beacon to office usage application, information from office usage application to manager, knowledge from FlexSpace Employee to Manager
+
+		Value Extract: Installation Process, Software Licensing, Provision from installation partners, Training fees to learn how to use the Office Usage Application
 
 	\subsection{Three-dimensional collaborator Model (Chan, 2015)}
 
@@ -403,12 +416,14 @@ The three dimensional collaborator model by Chan is less abstract than the ecosy
 	% 	\item How can the conducted comparison help IoT companies to design better business models?
 	% \end{itemize}
 
+	Westerlund: FlexSpace is not a typical ecosystem business idea. Typical example would be a multi-sided platform such as the Apple AppStore. Maybe that's why the application of the framework was difficult. Also, the authors themselves stated that their paper only proposes the four key value pillars that can be used as a basis for the development of a practically applicable business model framework tool in the future.
+
 \section{Summary and Conclusions}
 \label{sec:summary}
 	
-	This paper presents the essentials to the `Internet of Things' paradigm and the concept of business models. Based on literature research, currently important business model frameworks for IoT businesses were presented and described. The illustrated frameworks were compared based on an imaginary model company. In the evaluation it was concluded that [...] based on [...].\\
+	This paper presents the essentials to the `Internet of Things' paradigm and the concept of business models. Based on literature research, currently important business model frameworks for IoT businesses were presented and described. The illustrated frameworks were compared based on an imaginary model company. In the evaluation it was concluded that \todo{[...]} based on \todo{[...]}.\\
 	The literature on business models for IoT is relatively scarce, thus this paper is based on few self referencing papers e.g. \cite{ju} and \cite{dijkman} and lacks a broader view. As evaluated in Section~\ref{sec:eval} [...]\\
-	To conclude [.. only more generally usable framework is canvas/dijkman... a deeper analysis of each block would lead to a more specific framwork, but also only usable for a subsection of businesses ...]
+	\todo{To conclude [.. only more generally usable framework is canvas/dijkman... a deeper analysis of each block would lead to a more specific framework, but also only usable for a subsection of businesses ...]}
 	% \begin{itemize} 
 	% 	\item Summarize the paper content
 	% 	\item Show limitations of the paper
@@ -418,7 +433,7 @@ The three dimensional collaborator model by Chan is less abstract than the ecosy
  \begin{thebibliography}{99}
 	 \bibitem {gassmann} O. Gassmann, K. Frankenberger, and M. Csik: \emph{Revolutionizing the business model.} in O. Gassmann and F. Schweitzer (Eds.), Management of the Fuzzy Front End of Innovation. Springer, New York, pp. 89-97, 2014, \url{http://link.springer.com/chapter/10.1007%2F978-3-319-01056-4_7}, last visit: October 06, 2016.
 
-	 \bibitem {gassmann55} Gassmann et al.: \emph{Gesch?tsmodelle entwickeln: 55 innovative Konzepte mit dem St. Galler Business Model Navigator.} in Hanser Verlag, 2013.
+	 \bibitem {gassmann55} Gassmann et al.: \emph{Gesch�tsmodelle entwickeln: 55 innovative Konzepte mit dem St. Galler Business Model Navigator.} in Hanser Verlag, 2013.
 
 	 \bibitem {osterwalder} A. Osterwalder, Y. Pigneur, A. Smith: \emph{Business Model Generation}, self published, 2010.
 
@@ -444,18 +459,18 @@ The three dimensional collaborator model by Chan is less abstract than the ecosy
 
 	\bibitem {chan} Chan, H.C.Y. (2015) Internet of Things Business Models. Journal of Service Science and Management,8, 552-568. \url{http://dx.doi.org/10.4236/jssm.2015.84056}, last visit: October 06, 2016.
 
-	\bibitem {itu} TODO
+	\bibitem {itu} \todo{TODO}
 
-	\bibitem {Atzori} TODO
+	\bibitem {Atzori} \todo{TODO}
 
-	\bibitem {osterwalder2005} TODO
+	\bibitem {osterwalder2005} \todo{TODO}
 
 	\bibitem {holler} Holler, J., Tsiatsis, V., Mulligan, C., Avesand, S., Karnouskos, S. and Boyle, D. (2014) From Machine-to-Machine to the Internet of Things: Introduction to a New Age of Intelligence. Elsevier, Waltham.
 
 	\bibitem {li} Li, Y., Hou, M.J., Liu, H. and Liu, Y. (2012) Towards a Theoretical Framework of Strategic Decision, Supporting Capability and Information Sharing under the Context of Internet of Things. Information Technology and Management, 13, 205-216.
 	\url{http://dx.doi.org/10.1007/s10799-012-0121-1}, last visit: October 06, 2016.
 
-	\bibitem {osterwalder2010} TODO
+	\bibitem {osterwalder2010} \todo{TODO}
 
  \end{thebibliography}
 

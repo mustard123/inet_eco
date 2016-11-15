@@ -1,8 +1,8 @@
 %!TEX root = ../talk.tex
 \newcommand{\todo}[2][red]{\textcolor{#1}{#2}}
 
-\chapter{Comparison of IoT Business Model}
-\markboth{Comparison of IoT Business Model}{}
+\chapter{Comparison of IoT Business Model Framework}
+\markboth{Comparison of IoT Business Model Framework}{}
 \chaptauthors{Matthias Diez, Christian Ott, Silas Weber}
 
 \Kurzfassung{
@@ -26,7 +26,7 @@
 \label{sec:iot}
 	The term ``Internet of Things'' (IoT) has grown to one of the most discussed topics in academia and industry \cite{ju}. The phrasing was first used by Kevin Ashton during a presentation in 1999. From there IoT has become a new paradigm, it basically means the ``interconnection of physical objects, by equipping them with sensors, actuators and a means to connect to the Internet'' \cite{dijkman}.
 
-	Even though the term ``Internet of Things'' is currently used by everyone, there is no common consent about its definition. The International Telecommunication Union (ITU) defined IoT 2012 in a recommendation as ``a global infrastructure for the information Society, enabling advanced services by interconnecting (physical and virtual) things based on, existing and evolving, inter-operable information and communication technologies'' \cite{itu}. Besides their view on IoT, other definitions were built, Atzori et al. identified three visions how IoT may be seen. As illustrated in Figure~\ref{fig:iot_visions} one is focused on the `things' getting connected over technologies like RFID, WLAN or NCF. The second visions is `Internet oriented', where anything connects with anyone . The third point of view is a `semantic oriented' vision, definitions in this direction can be found in literature. The the semantic oriented vision present thoughts on problems generated through the extremely increased number of connected `things', e.g. the challenging issues related to the representation, storage, interconnection, search and organization of information from IoT \cite{atzori}.\\
+	Even though the term ``Internet of Things'' is currently used by everyone, there is no common consent about its definition. The International Telecommunication Union (ITU) defined IoT 2012 in a recommendation as ``a global infrastructure for the information Society, enabling advanced services by interconnecting (physical and virtual) things based on, existing and evolving, inter-operable information and communication technologies'' \cite{itu}. Besides their view on IoT, other definitions were built, Atzori et al. identified three visions how IoT may be seen. As illustrated in Figure~\ref{fig:iot_visions}, one is focused on the `things' getting connected over technologies like RFID, WLAN or NCF. The second visions is `Internet oriented', where anything connects with anyone . The third point of view is a `semantic oriented' vision, definitions in this direction can be found in literature. The the semantic oriented vision present thoughts on problems generated through the extremely increased number of connected `things', e.g. the challenging issues related to the representation, storage, interconnection, search and organization of information from IoT \cite{atzori}.\\
 	Due to the differences in these visions, the definitions of IoT established by organizations or entities vary a lot depending on their specific interests, approach taken on the subject as well as their backgrounds. The convergence of these three visions illustrated in Figure~\ref{fig:iot_visions} can be seen as the overall paradigm of IoT, this is also the perspective this paper takes  on in the remaining sections. 
 
 	\begin{figure}[ht]
@@ -37,25 +37,22 @@
 	    \label{fig:iot_visions}
     \end{figure}
 
-	The number of worldwide connected `things' is rapidly growing, in 2016 Gartner predicted up to 6.4 billion connected devices which will reach up to 20.8 billion by 2020 \cite{gartner}. Consequently organizations are more and more involved in IoT-related products, applications and services either in the development or as an investment \cite{ju}. Google acquired Nest for \$3.2 billion, a quickly growing smart thermostat company. Samsung bought SmartTings, an open smart home platform []. A lot of IoT companies emerge like LiFX as smart bulb company \todo{[] or TODO}. Telecommunication organizations invest in future technologies like 5G which was discussed in chapter \todo{??} of this seminar report. Governments increasingly acknowledge the importance of IoT, the United States supported a Smart Cities Initiative with \$160 million \todo{[]}, the Korean government planned \$5 billion investments in various IoT projects until 2020 \todo{[]}. The investments driven by national institutions as well as aggressive investments by companies in IoT would ``create new business opportunities and substantial social and economic benefits''\todo{[]}. 
+	The number of worldwide connected `things' is rapidly growing, in 2016 Gartner predicted up to 6.4 billion connected devices which will reach up to 20.8 billion by 2020 \cite{gartner}. Consequently organizations are more and more involved in IoT-related products, applications and services either in the development or as an investment \cite{ju}. Google acquired Nest for \$3.2 billion, a quickly growing smart thermostat company \cite{tilley_nest}. Samsung bought SmartTings, an open smart home platform \cite{tilley_smart}. A lot of IoT companies emerge like LiFX as smart bulb company \cite{lifx}. Telecommunication organizations invest in future technologies like 5G which was discussed in Chapter 10 of this seminar report. Governments increasingly acknowledge the importance of IoT, the United States supported a Smart Cities Initiative with \$160 million \cite{miller}, the Korean government planned \$5 billion investments in various IoT projects until 2020 \cite{cho}. The investments driven by national institutions as well as aggressive investments by companies in IoT would ``create new business opportunities and substantial social and economic benefits''\cite{ju}. 
 
-	Even though there is no concrete definition what IoT is, there is some consent about the architecture of IoT. A Three layered application stack can be found in various research literature albeit the layers may be named differently they are semantically comparable \todo{[fleisch, ju, wortmann, ]}. A `thing' layer, which means a hardware-based sensing layer, it has the function to identify objects and collect information through sensors over short-rang and local networks \cite{ju}.\\
+	Even though there is no concrete definition what IoT is, there is some consent about the architecture of IoT. A Three layered application stack can be found in various research literature albeit the layers may be named differently they are semantically comparable \cite{fleisch} \cite{ju}, \cite{wortmann}. A `thing' layer, which means a hardware-based sensing layer, it has the function to identify objects and collect information through sensors over short-rang and local networks \cite{ju}.\\
 	The network layer transmits real-time data. It interconnects not only people to `things' but allows also an information flow between `things' autonomously. The data presented by the network layer can be used by companies to provide optimized and personalized services \cite{ju}\\
 	The application layer is described by Ju et al. as a ``combination of data processing and intelligence analysis to meet the industry needs to realize an intellectualized industry''. The application layer allows companies to achieve ``different types of intelligent application solutions'' as well as the determination of business strategies\cite{ju}.
 
 	The Internet of Things has a huge potential. On one side are the customers which enjoy new experiences through the new connected world, on the other side are the businesses getting involved in the IoT market, they hope \cite{ju}.\\
 	
-<<<<<<< HEAD
 	\todo{TODO: potenzial beschriibe, f?r business und `private' bi business ?berleitig zu BM und section BMF}
-=======
-	\todo{TODO: potenzial beschriibe, f�r business und `private' bi business �berleitig zu BM und section BMF}
->>>>>>> b494097c35675969b02d5019e682582eb740a618
+
 
 	\subsection{Cisco Internet of Things}
 		This section takes a look at where business models stand today. Especially for business model frameworks that are built on an ecosystem view, standardization issues come into play. From Cisco's IoT Ecosystem study we look at the following three topics, namely players, market and standardization in regard to the current state of IoT.
 
-		\begin{itemize}
-			\item Players
+	\begin{itemize}
+		\item Players
 
 		Cicso's study identified four types of players \cite{cisco}:
 
@@ -93,8 +90,8 @@
 \section{Business Model Frameworks}
 \label{sec:bmf}	
 	\subsection{Definitions} 
-		 A \textbf{Business Model} is ``a description of the value a company offers to one or several segments of customers and of the architecture of the firm and its network of partners for creating, marketing and delivering this value and relationship capital, to generate profitable and sustainable revenue streams'' \todo{[osterwalder 2005]}. The concept of the business model became important in the 1990 as the Internet began to spread and became important since then \todo{[22]}. There is no commonly accepted view what the business models should include \todo{[morris, osterwalder, schweizer]}. Achtenhagen et al. stated that there has been a change from ``what business models are'' to ``what business models are for'' \cite{westerlund}. In various literature there seems to exist an agreement that a business model is `the way of doing business' for a particular firm \cite{westerlund}. The heart of each business model stands the goal of minimizing cost and maximizing revenue \cite{ju}.\\
-		 Business models are composed of a variety of components. In business models commonly found components are customer segments, value proposition, channels, customer relationships, revenue streams, key resources, key activities, key partnership and cost structure \todo{[osterwalder 2005]}. These Components are the fundamental building blocks of the Business Model Canvas and, thus they are described in detail in Section~\ref{sec:bmc}. \\
+		 A \textbf{Business Model} is ``a description of the value a company offers to one or several segments of customers and of the architecture of the firm and its network of partners for creating, marketing and delivering this value and relationship capital, to generate profitable and sustainable revenue streams'' \cite{osterwalder2005}. The concept of the business model became important in the 1990 as the Internet began to spread and became important since then \cite{zott}. There is no commonly accepted view what the business models should include \cite{morris}, \cite{osterwalder2005}, \cite{schweizer}. Achterhagen et al. stated that there has been a change from ``what business models are'' to ``what business models are for'' \cite{achtenhagen}. In various literature there seems to exist an agreement that a business model is `the way of doing business' for a particular firm \cite{westerlund}. The heart of each business model stands the goal of minimizing cost and maximizing revenue \cite{ju}.\\
+		 Business models are composed of a variety of components. In business models commonly found components are customer segments, value proposition, channels, customer relationships, revenue streams, key resources, key activities, key partnership and cost structure \cite{osterwalder2005}. These Components are the fundamental building blocks of the Business Model Canvas and, thus they are described in detail in Section~\ref{sec:bmc}.\\
 
 		 A \textbf{Business Model Framework} is a tool to help a company in the development of its business model by presenting an overview over the business model components described above \cite{dijkman}.
 
@@ -436,10 +433,10 @@
 	% \end{itemize}
 
  \begin{thebibliography}{99}
-	 \bibitem {gassmann} O. Gassmann, K. Frankenberger, and M. Csik: \emph{Revolutionizing the business model.} in O. Gassmann and F. Schweitzer (Eds.), Management of the Fuzzy Front End of Innovation. Springer, New York, pp. 89-97, 2014, \url{http://link.springer.com/chapter/10.1007%2F978-3-319-01056-4_7}, last visit: October 06, 2016.
+	\bibitem {gassmann} O. Gassmann, K. Frankenberger, and M. Csik: \emph{Revolutionizing the business model.} in O. Gassmann and F. Schweitzer (Eds.), Management of the Fuzzy Front End of Innovation. Springer, New York, pp. 89-97, 2014, \url{http://link.springer.com/chapter/10.1007%2F978-3-319-01056-4_7}, last visit: October 06, 2016.
 
 
-	 \bibitem {gassmann55} Gassmann et al.: \emph{Gesch�tsmodelle entwickeln: 55 innovative Konzepte mit dem St. Galler Business Model Navigator.} in Hanser Verlag, 2013.
+	 \bibitem {gassmann55} Gassmann et al.: \emph{Geschaeftsmodelle entwickeln: 55 innovative Konzepte mit dem St. Galler Business Model Navigator.} in Hanser Verlag, 2013.
 
 	 \bibitem {osterwalder} A. Osterwalder, Y. Pigneur, A. Smith: \emph{Business Model Generation}, self published, 2010.
 
@@ -459,24 +456,41 @@
 
 	\bibitem {ju} Jaehyeon Ju, Mi-Seon Kim and Jae-Hyeon Ahn: \emph{Prototyping Business Models for IoT Service}, Procedia Computer Science, 91, pp. 882 - 890, 2016, \url{http://www.sciencedirect.com/science/article/pii/S1877050916312911}, last visit: October 06, 2016.
  	
- 	\bibitem {tilley}  A. Tilley, Google Acquires Smart Thermostat Maker Nest For \$3.2 Billion. 2014  [cited 2016 May 15]; Available from: \url{http://www.forbes.com/sites/aarontilley/2014/01/13/google-acquires-nest-for-3-2-billion/#7049b3181416}
- 	
+ 	\bibitem {tilley_nest}  A. Tilley, Google Acquires Smart Thermostat Maker Nest For \$3.2 Billion. 2014  [cited 2016 May 15]; Available from: \url{http://www.forbes.com/sites/aarontilley/2014/01/13/google-acquires-nest-for-3-2-billion/#7049b3181416}
+
+ 	\bibitem {tilley_smart}  A. Tilley, Samsung Acquires SmartThings, A Fast-Growing Home Automation Startup. 2014  [cited 2016 May 15]; Available from: \url{http://www.forbes.com/sites/aarontilley/2014/08/14/samsung-smartthings-acquisition-2/#25b90c197965}
+
+ 	\bibitem {lifx} \url{http://www.lifx.com/}
+
+ 	\bibitem {miller} B. Miller, Obama Places \$160 Million Bet on Smart Cities, Internet of Things. 2015  [cited 2016 May 15]; Available from: \url{http://www.govtech.com/Obama-Places-160-Million-Bet-on-Smart-Cities-Internet-of-Things.html}
+
+	\bibitem {cho} M.-H. Cho, South Korea to invest \$5b by 2020 in IoT and smart cars. 2015  [cited 2016 May 15]; Available from: \url{http://www.zdnet.com/article/south-korea-to-invest-5b-by-2020-in-iot-and-smart-cars/}
+
+	\bibitem {wortmann}  F. Wortmann and K. Flüchter, Internet of things. Business \& Information Systems Engineering, 2015. 57(3): p. 221-224.
+
+	\bibitem  {morris} Morris, M., Schindehutte, M., \& Allen, J. 2005. The Entrepreneur's Business Model: Toward a Unified Perspective. Journal of Business Research, 58: 726-35. \url{http://dx.doi.org/10.1016/j.jbusres.2003.11.001}
+
+	\bibitem {schweizer} Schweizer, L. 2005. Concept and Evolution of Business Models. Journal of General Management, 31(2): 37-56.
+
+	\bibitem {achtenhagen} Achtenhagen, L., Melin, L., \& Naldi, L. 2013. Dynamics of Business Models - Strategizing, Critical Capabilities and Activities for Sustained Value Creation. Long Range Planning, 46(6): 427-442. \url{http://dx.doi.org/10.1016/j.lrp.2013.04.002}
+
  	\bibitem {gartner}  Gartner. 4.9 Billion Connected ``Things'' Will Be in Use in 2015. 2014  [cited 2016 May 15]; Available from: \url{http://www.gartner.com/newsroom/id/2905717}
 
 	\bibitem {chan} Chan, H.C.Y. (2015) Internet of Things Business Models. Journal of Service Science and Management,8, 552-568. \url{http://dx.doi.org/10.4236/jssm.2015.84056}, last visit: October 06, 2016.
 
-	\bibitem {itu} \todo{TODO}
+	\bibitem {atzori} Atzori L, Iera A, Morabito G (2010) The internet of things: a survey. Comput Netw 54:2787-2805 
 
-	\bibitem {Atzori} \todo{TODO}
-
-	\bibitem {osterwalder2005} \todo{TODO}
+	\bibitem {itu} New ITU standards define the internet of things and provide the blueprints for its development. \url{http://www.itu.int/ITU-T/newslog/New+ITU+Standards+Define+The+Internet+Of+Things+And+Provide+The+Blueprints+For+Its+Development.aspx} Accessed 27 Sep 2014 
+	
+	\bibitem {osterwalder2005} Osterwalder, A., Pigneur, Y., \& Tucci, C. L. 2005. Clarifying Business Models: Origins, Present and Future of the Concept. Communications of the Association for Information Science, 16(1): 1-25. \url{http://aisel.aisnet.org/cais/vol16/iss1/1}
 
 	\bibitem {holler} Holler, J., Tsiatsis, V., Mulligan, C., Avesand, S., Karnouskos, S. and Boyle, D. (2014) From Machine-to-Machine to the Internet of Things: Introduction to a New Age of Intelligence. Elsevier, Waltham.
 
-	\bibitem {li} Li, Y., Hou, M.J., Liu, H. and Liu, Y. (2012) Towards a Theoretical Framework of Strategic Decision, Supporting Capability and Information Sharing under the Context of Internet of Things. Information Technology and Management, 13, 205-216.
-	\url{http://dx.doi.org/10.1007/s10799-012-0121-1}, last visit: October 06, 2016.
+	\bibitem {li} Li, Y., Hou, M.J., Liu, H. and Liu, Y. (2012) Towards a Theoretical Framework of Strategic Decision, Supporting Capability and Information Sharing under the Context of Internet of Things. Information Technology and Management, 13, 205-216. \url{http://dx.doi.org/10.1007/s10799-012-0121-1}, last visit: October 06, 2016.
 
-	\bibitem {osterwalder2010} \todo{TODO}
+	\bibitem {osterwalder2010} Osterwalder, A., \& Pigneur, Y. (2010). Business model generation: a handbook for visionaries, game changers, and challengers. Hoboken, NJ: John Wiley \& Sons. 
 
+	\bibitem {zott}  C. Zott, R. Amit, and L. Massa, The business model: recent developments and future research. Journal of management, 2011. 37(4): p. 1019-1042. 
+ 
  \end{thebibliography}
 

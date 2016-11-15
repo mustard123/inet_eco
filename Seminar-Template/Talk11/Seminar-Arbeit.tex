@@ -1,15 +1,18 @@
 %!TEX root = ../talk.tex
+\newcommand{\todo}[2][red]{\textcolor{#1}{#2}}
 
 \chapter{Comparison of IoT Business Model}
 \markboth{Comparison of IoT Business Model}{}
 \chaptauthors{Matthias Diez, Christian Ott, Silas Weber}
 
 \Kurzfassung{
-	\begin{itemize}
-		\item Explain why IoT and business models for it are relevant
-		\item Present the method that is used to gain the results
-		\item Summarize the results of the paper
-	\end{itemize}
+	\todo{
+		\begin{itemize}
+			\item Explain why IoT and business models for it are relevant
+			\item Present the method that is used to gain the results
+			\item Summarize the results of the paper
+		\end{itemize}
+	}
 }
 
 \newpage
@@ -18,7 +21,6 @@
 
 \newpage
 
-\newcommand{\todo}[2][red]{\textcolor{#1}{#2}}
 \renewcommand{\labelitemii}{$\diamond$}
 \renewcommand{\labelitemiii}{$\circ$}
 
@@ -32,7 +34,7 @@
 
 	Even though the term ``Internet of Things'' is currently used by everyone, there is no common consent about its definition. The International Telecommunication Union (ITU) defined IoT 2012 in a recommendation as ``a global infrastructure for the information Society, enabling advanced services by interconnecting (physical and virtual) things based on, existing and evolving, inter-operable information and communication technologies'' \cite{itu}. Besides their view on IoT, other definitions were built, Atzori et al. identified three visions how IoT may be seen. As illustrated in Figure~\ref{fig:iot_visions} one is focused on the `things' getting connected over technologies like RFID, WLAN or NCF. The second visions is `Internet oriented', where anything connects with anyone . The third point of view is a `semantic oriented' vision, definitions in this direction can be found in literature. The the semantic oriented vision present thoughts on problems generated through the extremely increased number of connected `things', e.g. the challenging issues related to the representation, storage, interconnection, search and organization of information from IoT \cite{atzori}.\\
 	Due to the differences in these visions, the definitions of IoT established by organizations or entities vary a lot depending on their specific interests, approach taken on the subject as well as their backgrounds. The convergence of these three visions illustrated in Figure~\ref{fig:iot_visions} can be seen as the overall paradigm of IoT, this is also the perspective this paper takes  on in the remaining sections. 
-	
+
 	\begin{figure}[ht]
 	    \begin{center}
 	    \includegraphics[scale=0.35]{Talk11/iot_visions.jpg}
@@ -85,7 +87,7 @@
 
 		\item Standardization
 
-		Cisco found that current IoT-specific standardization activities are restricted to specific vertical. This means standardization is only achieved for one specific scope of application for example healthcare, wearables, agriculture etc. This creates so called islands of disjointed and sometimes redundant development.
+		Cisco found that current IoT-specific standardization activities are restricted to specific vertical. This means standardization is only achieved for one specific scope of application for example health care, wearables, agriculture etc. This creates so called islands of disjointed and sometimes redundant development.
 		Such a fragmentation is detrimental to the IoT market. Overcoming and preventing such fragmentations is the challenge. There are some major standard bodies active in IoT like the Institute of Electrical and Electronics Engineers (IEEE) or the World Wide Web Consortium (W3C). But not all of them have global reach.
 		For businesses, application standards will enable interoperability between products.  This is needed for businesses that are part of an ecosystem and rely on interoperability. Furthermore, standardization improves flexibility, so that IoT businesses don't get stuck in specific industry because they are locked in. This flexibility furthers competition between companies which will in the end be beneficial for the end user and society.
 	\end{itemize}
@@ -93,8 +95,8 @@
 \section{Business Model Frameworks}
 \label{sec:bmf}	
 	\subsection{Definitions} 
-		 A \textbf{Business Model} is ``a description of the value a company offers to one or several segments of customers and of the architecture of the firm and its network of partners for creating, marketing and delivering this value and relationship capital, to generate profitable and sustainable revenue streams'' [osterwalder 2005]. The concept of the business model became important in the 1990 as the Internet began to spread and became important since then [22]. There is no commonly accepted view what the business models should include [morris, osterwalder, schweizer]. Achtenhagen et al. stated that there has been a change from ``what business models are'' to ``what business models are for'' \cite{westerlund}. In various literature there seems to exist an agreement that a business model is `the way of doing business' for a particular firm \cite{westerlund}. The heart of each business model stands the goal of minimizing cost and maximizing revenue \cite{ju}.\\
-		 Business models are composed of a variety of components. In business models commonly found components are customer segments, value proposition, channels, customer relationships, revenue streams, key resources, key activities, key partnership and cost structure[ osterwalder 2005]. These Components are the fundamental building blocks of the Business Model Canvas and, thus they are described in detail in Section~\ref{sec:bmc}. \\
+		 A \textbf{Business Model} is ``a description of the value a company offers to one or several segments of customers and of the architecture of the firm and its network of partners for creating, marketing and delivering this value and relationship capital, to generate profitable and sustainable revenue streams'' \todo{[osterwalder 2005]}. The concept of the business model became important in the 1990 as the Internet began to spread and became important since then \todo{[22]}. There is no commonly accepted view what the business models should include \todo{[morris, osterwalder, schweizer]}. Achtenhagen et al. stated that there has been a change from ``what business models are'' to ``what business models are for'' \cite{westerlund}. In various literature there seems to exist an agreement that a business model is `the way of doing business' for a particular firm \cite{westerlund}. The heart of each business model stands the goal of minimizing cost and maximizing revenue \cite{ju}.\\
+		 Business models are composed of a variety of components. In business models commonly found components are customer segments, value proposition, channels, customer relationships, revenue streams, key resources, key activities, key partnership and cost structure \todo{[osterwalder 2005]}. These Components are the fundamental building blocks of the Business Model Canvas and, thus they are described in detail in Section~\ref{sec:bmc}. \\
 
 		 A \textbf{Business Model Framework} is a tool to help a company in the development of its business model by presenting an overview over the business model components described above \cite{dijkman}.
 
@@ -388,9 +390,9 @@
 \section{Summary and Conclusions}
 \label{sec:summary}
 	
-	This paper presents the essentials to the `Internet of Things' paradigm and the concept of business models. Based on literature research, currently important business model frameworks for IoT businesses were presented and described. The illustrated frameworks were compared based on an imaginary model company. In the evaluation it was concluded that [...] based on [...].\\
+	This paper presents the essentials to the `Internet of Things' paradigm and the concept of business models. Based on literature research, currently important business model frameworks for IoT businesses were presented and described. The illustrated frameworks were compared based on an imaginary model company. In the evaluation it was concluded that \todo{[...]} based on \todo{[...]}.\\
 	The literature on business models for IoT is relatively scarce, thus this paper is based on few self referencing papers e.g. \cite{ju} and \cite{dijkman} and lacks a broader view. As evaluated in Section~\ref{sec:eval} [...]\\
-	To conclude [.. only more generally usable framework is canvas/dijkman... a deeper analysis of each block would lead to a more specific framework, but also only usable for a subsection of businesses ...]
+	\todo{To conclude [.. only more generally usable framework is canvas/dijkman... a deeper analysis of each block would lead to a more specific framework, but also only usable for a subsection of businesses ...]}
 	% \begin{itemize} 
 	% 	\item Summarize the paper content
 	% 	\item Show limitations of the paper

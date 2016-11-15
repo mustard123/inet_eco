@@ -23,19 +23,20 @@
 
 \section{Introduction and Problem Statement}
 	The goal of this paper is fourfold, first a common ground is built, with the definitions and characterizations of IoT, business models and business model frameworks. Second, the basic business model framework concepts ``magic triangle'' and  Business Model Canvas are introduced. Third, the changes that were made to business model frameworks due to the development if IoT are highlighted, and lastly, the currently available IoT business model frameworks are presented and compared against each other.\\
-	The rest of the paper is structured as follows. In Section 1.2 the term `Internet of Things' is introduced and its definition, growth, architecture and potential of IoT for business evaluated. Section 1.3 presents the concept of business models and business model frameworks. Along with the definitions, two major `classic' business model frameworks are described. Section 1.4 shows available business model frameworks that are adapted for IoT, Section 1.5 will compare those frameworks and illustrate the results based on a model company. Finally, in Section 1.6 will evaluate the findings of the previous sections, the summery and conclusion will be presented in Section 1.7. 
+	The rest of the paper is structured as follows. In Section~\ref{sec:iot} the term `Internet of Things' is introduced and its definition, growth, architecture and potential of IoT for business evaluated. Section~\ref{sec:bmf} presents the concept of business models and business model frameworks. Along with the definitions, two major `classic' business model frameworks are described. Section~\ref{sec:bmf_available} shows available business model frameworks that are adapted for IoT, Section~\ref{sec:bmf_comparison} will compare those frameworks and illustrate the results based on a model company. Finally, in Section~\ref{sec:eval} will evaluate the findings of the previous sections, the summery and conclusion will be presented in Section~\ref{sec:summary}. 
  
 \section{Internet of Things}
+\label{sec:iot}
 	The term ``Internet of Things'' (IoT) has grown to one of the most discussed topics in academia and industry \cite{ju}. The phrasing was first used by Kevin Ashton during a presentation in 1999. From there IoT has become a new paradigm, it basically means the ``interconnection of physical objects, by equipping them with sensors, actuators and a means to connect to the Internet'' \cite{dijkman}.
 
-	Even though the term ``Internet of Things'' is currently used by everyone, there is no common consent about its definition. The International Telecommunication Union (ITU) defined IoT 2012 in a recommendation as ``a global infrastructure for the information Society, enabling advanced services by interconnecting (physical and virtual) things based on, existing and evolving, inter-operable information and communication technologies'' \cite{itu}. Besides their view on IoT, other definitions were built, Atzori et al. identified three visions how IoT may be seen. As illustrated in Figure 1.x one is focused on the `things' getting connected over technologies like RFID, WLAN or NCF. The second visions is `Internet oriented', where anything connects with anyone . The third point of view is a `semantic oriented' vision, definitions in this direction can be found in literature. The the semantic oriented vision present thoughts on problems generated through the extremely increased number of connected `things', e.g. the challenging issues related to the representation, storage, interconnection, search and organization of information from IoT \cite{atzori}.\\
-	Due to the differences in these visions, the definitions of IoT established by organizations or entities vary a lot depending on their specific interests, approach taken on the subject as well as their backgrounds. The convergence of these three visions illustrated in Figure 1.x can be seen as the overall paradigm of IoT, this is also the perspective this paper takes  on in the remaining sections. 
-	\begin{figure}[h]
+	Even though the term ``Internet of Things'' is currently used by everyone, there is no common consent about its definition. The International Telecommunication Union (ITU) defined IoT 2012 in a recommendation as ``a global infrastructure for the information Society, enabling advanced services by interconnecting (physical and virtual) things based on, existing and evolving, inter-operable information and communication technologies'' \cite{itu}. Besides their view on IoT, other definitions were built, Atzori et al. identified three visions how IoT may be seen. As illustrated in Figure~\ref{fig:iot_visions} one is focused on the `things' getting connected over technologies like RFID, WLAN or NCF. The second visions is `Internet oriented', where anything connects with anyone . The third point of view is a `semantic oriented' vision, definitions in this direction can be found in literature. The the semantic oriented vision present thoughts on problems generated through the extremely increased number of connected `things', e.g. the challenging issues related to the representation, storage, interconnection, search and organization of information from IoT \cite{atzori}.\\
+	Due to the differences in these visions, the definitions of IoT established by organizations or entities vary a lot depending on their specific interests, approach taken on the subject as well as their backgrounds. The convergence of these three visions illustrated in Figure~\ref{fig:iot_visions} can be seen as the overall paradigm of IoT, this is also the perspective this paper takes  on in the remaining sections. 
+	\begin{figure}[ht]
 	    \begin{center}
 	    \includegraphics[scale=0.35]{Talk11/iot_visions.jpg}
 	    \end{center}
 	    \caption{``Internet of Things'' paradigm as a result of the convergence of different visions.}
-	    \label{``Internet of Things'' visions}
+	    \label{fig:iot_visions}
     \end{figure}
 
 	The number of worldwide connected `things' is rapidly growing, in 2016 Gartner predicted up to 6.4 billion connected devices which will reach up to 20.8 billion by 2020 \cite{gartner}. Consequently organizations are more and more involved in IoT-related products, applications and services either in the development or as an investment \cite{ju}. Google acquired Nest for \$3.2 billion, a quickly growing smart thermostat company. Samsung bought SmartTings, an open smart home platform []. A lot of IoT companies emerge like LiFX as smart bulb company [] or TODO. Telecommunication organizations invest in future technologies like 5G which was discussed in chapter ?? of this seminar report. Governments increasingly acknowledge the importance of IoT, the United States supported a Smart Cities Initiative with \$160 million [], the Korean government planned \$5 billion investments in various IoT projects until 2020 []. The investments driven by national institutions as well as aggressive investments by companies in IoT would ``create new business opportunities and substantial social and economic benefits''[]. 
@@ -44,7 +45,8 @@
 	The network layer transmits real-time data. It interconnects not only people to `things' but allows also an information flow between `things' autonomously. The data presented by the network layer can be used by companies to provide optimized and personalized services \cite{ju}\\
 	The application layer is described by Ju et al. as a ``combination of data processing and intelligence analysis to meet the industry needs to realize an intellectualized industry''. The application layer allows companies to achieve ``different types of intelligent application solutions'' as well as the determination of business strategies\cite{ju}.
 
-	The Internet of Things has a huge potential. On one side are the customers which enjoy new experiences through the new connected world, on the other side are the businesses getting involved in the IoT market, they hope \cite{ju}.
+	The Internet of Things has a huge potential. On one side are the customers which enjoy new experiences through the new connected world, on the other side are the businesses getting involved in the IoT market, they hope \cite{ju}.\\
+	[TODO: potenzial beschriibe, für business und `private' bi business überleitig zu BM und section BMF ]
 
 	\subsection{Cisco Internet of Things}
 		This section takes a look at where business models stand today. Especially for business model frameworks that are built on an ecosystemic view, standardization issues come into play. From Ciscos IoT Ecosystem study we look at the following four topics, namely players, market and standardization in regard to the current state of IoT.
@@ -75,10 +77,10 @@
 		For businesses, application standards will enable interoperability between products.  This is needed for businesses that are part of an ecosystem and rely on interoperability. Furthermore, standardization improves flexibility, so that IoT businesses don't get stuck in specific industry because they are locked in. This flexibility furthers competition between companies which will in the end be beneficial for the end user and society.
 
 \section{Business Model Frameworks}
-	
-	\subsection{Definitions}
+\label{sec:bmf}	
+	\subsection{Definitions} 
 		 A \textbf{Business Model} is ``a description of the value a company offers to one or several segments of customers and of the architecture of the firm and its network of partners for creating, marketing and delivering this value and relationship capital, to generate profitable and sustainable revenue streams'' [osterwalder 2005]. The concept of the business model became important in the 1990 as the Internet began to spread and became important since then [22]. There is no commonly accepted view what the business models should include [morris, osterwalder, schweizer]. Achtenhagen et al. stated that there has been a change from ``what business models are'' to ``what business models are for'' \cite{westerlund}. In various literature there seems to exist an agreement that a business model is `the way of doing business' for a particular firm \cite{westerlund}. The heart of each business model stands the goal of minimizing cost and maximizing revenue \cite{ju}.\\
-		 Business models are composed of a variety of components. In business models commonly found components are customer segments, value proposition, channels, customer relationships, revenue streams, key resources, key activities, key partnership and cost structure[ osterwalder 2005]. These Components are the fundamental building blocks of the Business Model Canvas and, thus they are described in detail in Section 1.xyz. \\
+		 Business models are composed of a variety of components. In business models commonly found components are customer segments, value proposition, channels, customer relationships, revenue streams, key resources, key activities, key partnership and cost structure[ osterwalder 2005]. These Components are the fundamental building blocks of the Business Model Canvas and, thus they are described in detail in Section~\ref{sec:bmc}. \\
 
 		 A \textbf{Business Model Framework} is a tool to help a company in the development of its business model by presenting an overview over the business model components described above \cite{dijkman}.
 
@@ -95,9 +97,9 @@
 		    \includegraphics[scale=0.6]{Talk11/Figure1.png}
 		    \end{center}
 		    \caption{Gassmann's Magic Triangle}
-		    \label{Magic Triangle}
+		    \label{fig:m_triangle}
 		\end{figure}
-		TODO Figure 1.1 shows the constellation of the magic triangle with the ``Who'' node in the middle.
+		TODO Figure \ref{fig:m_triangle} shows the constellation of the magic triangle with the ``Who'' node in the middle.
 		Gassmann argues that reducing the business model to those four components allows for a simple, yet thorough enough view of the business model architecture.
 
 		Creating new business models is not an easy task. It requires thinking outside the box, going beyond convention industry philosophy and can quickly become complex. People that are versed in change management will recognize some of the problem. First, why even come up with a new or improved business model? As long as there are still profits coming in, why take a risk and leave your comfort zone? Competition and environmental factor are always in movement. What works today may not work so well anymore in a few years. The syndrome known as the boiling frog syndrome states that gradually increasing problems are go unnoticed and or not dealt with until until it's too late to tackle them. A frog in pot with water won't jump out if the water is slowly brought to boil and when the water gets too hot for him, his muscles are too weak to jump out. Likewise, a business that has diminishing returns year after year may not be concerned about the the little loss between consecutive year. But when they realize the devastating loss suffered over multiple years there aren't any resources left to tackle the problem and they go bankrupt.
@@ -110,25 +112,26 @@
 
 		Open-minded team members are essential, preferably from different functions. This allows different viewpoint and thinking outside the box as well as overcoming the prevailing industry logic.
 		
-		Recombining existing ideas helps generating new business models. Gassmann condensed for this purpose the 55 business models into a set of pattern cards as shown in TODO figure 1.2. Each card has a title, a description and an example. The goal is applying different cards to the current model to see what would change in this situation. The cards should trigger discussions and act as a stimuli for new innovative ideas.
+		Recombining existing ideas helps generating new business models. Gassmann condensed for this purpose the 55 business models into a set of pattern cards as shown in TODO Figure~\ref{fig:pattern_card}. Each card has a title, a description and an example. The goal is applying different cards to the current model to see what would change in this situation. The cards should trigger discussions and act as a stimuli for new innovative ideas.
 		\begin{figure}[ht]
 			    \begin{center}
 			    \includegraphics[scale=0.6]{Talk11/Figure2.png}
 			    \end{center}
 			    \caption{Pattern Card}
-			    \label{Pattern Card}
+			    \label{fig:pattern_card}
 			\end{figure}
 
 		The last step is the integration. It's obvious that a newly generated idea cannot be implemented instantaneously. New ideas need to be gradually fleshed out into fully operational business models. Considering the new stakeholders, partners and consequences for the market is crucial.
 
 	\subsection{Business Model Canvas (Osterwalder et al., 2010)} 
+	\label{sec:bmc}
 		The Business Model Canvas is a strategic management tool that was developed by Alexander Osterwalder in his doctoral thesis in 2004 and later published in book form by Osterwalder et al. \cite{osterwalder}. The tool supports business developers in gaining an overview about the key factors of their business. There are nine key factors explained by Osterwalder in detail and they are called `building blocks'. All of the building block can be aligned next to each other in a way that visualizes the mechanics of the business models (i.e. the interactions between the building block) and makes it easier to understand and discuss. The analog, pen and paper nature of the business model canvas allows it to be filled out in a team in order to stimulate creativity while finding a suitable business model for the business idea at hand.
 
 		The usual order of filling out the business model canvas \cite{bmc} is by starting with the targeted ``Customer Segments'', then following with the \textbf{Value Proposition} to these customers and the `Channels' that allow us to deliver the described value to the customer. The value is not only delivered in a physical but there is an emotional `Customer Relationship' with the customer, too that needs to be considered. In exchange for the proposed value, customers are willing to pay money which make up the `Revenue Streams' of the business model. With this fifth building block, the money-generating revenue side of the business model canvas is complete.
 
 		A business model always includes a cost side. In Osterwalder's canvas, the cost side consists of the following four building blocks: The `Key Resources' are human, financial, physical and intellectual resources that are critical to deliver the proposed value. But resources alone do not create value - they need to be used for `Key Activities' in order for the business model to be viable. As a business owner, the decision of what part of the value you create yourself and what you let other companies do for you is written down in the `Key Partners' building block. The costs induced by resources, activities and partners are finally collected in the `Cost Structure' building block.
 
-		A `Customer Segment' can be a mass market, a nice market or a multi-sided platform. Business can have very diversfied customer segments, with clear or unclear segmentation. It can be important to focus on the most important customers first.
+		A `Customer Segment' can be a mass market, a nice market or a multi-sided platform. Business can have very diversified customer segments, with clear or unclear segmentation. It can be important to focus on the most important customers first.
 
 		`Value Propositions' can have various characteristics such as the newness, performance, cost reduction potential or accessibility of the proposed value. The key questions to answer with this block is `What value do we deliver to the customer' and `Which customer needs are we satisfying?'. There can be multiple different value propositions per company.
 
@@ -147,6 +150,7 @@
 		The `Cost Structure' can be characterize along an axis from Cost driven (lowest costs in the market) to Value driven (best product/service in the market). Important characterizations of the cost structure include fixed and variable costs as well as the influence of economies of scale (the more you sell, the lower the cost per item) and economies of scope (the more diverse your offering, the more efficient a company can use its resources).	
 
 \section{Available IoT Business Model Frameworks}
+\label{sec:bmf_available}
 	In this chapter, we will present and discuss different IoT Business Model Frameworks that are currently available in research papers.
 	\subsection{IoT Business Model Patterns (Fleisch et. al, 2014)}
 		Specific business model patterns can be found in the IoT environment were described in \cite{fleisch}. This is a good starting point to find out what areas an IoT business model framework has to cover. The analysis of 55 distinct business model patterns from Gassmann et al. \cite{gassmann55} yields two novel business model patterns that can be applied to an IoT business: `Digitally Charged Products' and `Sensor as a Service'.
@@ -154,23 +158,22 @@
 		The pattern of a `Digitally Charged Products' is described as ``classic physical products are charged with a bundle
 		of new sensor-based digital services and positioned with new value propositions'' in \cite[p. 10]{fleisch}. The components that cab be used and combined are ``Physical Freemium'' (free digital service with a paid product and offering paid premium services), ``Digital Add-on'' (digital services are sold to customer on an add-on basis to increase the value of the base product), ``Digital Lock-in'' (limit the digital compatibility), ``Product as Point of Sales'', ``Object Self Service'', ``Remote Usage and Condition Monitoring''. 
 
-	\subsection{Adapted Business Model Canvas for IoT (Dijkman et. al, 2015)}
-		Dijkman et al. analyzed current research literature in order to create a business model framework for IoT applications. They searched for papers that contained the phrasing ``Internet of Things'' together with ``business model'', from the resulting 20 papers were 5 papers selected, only the ones that contained actual business models \cite{dijkman}. Two of the five papers were based on the business model canvas described in Section 1.4.
+	\subsection{Adapted Business Model Canvas for IoT (Dijkman et al., 2015)}
+		Dijkman et al. analyzed current research literature in order to create a business model framework for IoT applications. They searched for papers that contained the phrasing ``Internet of Things'' together with ``business model'', from the resulting 20 papers were 5 papers selected, only the ones that contained actual business models \cite{dijkman}. Two of the five papers were based on the business model canvas described in Section~\ref{sec:bmc}.\\
+		Dijkman et al.  then identified the building blocks and building block types of business models through the selected papers and interviews with professionals working in the IoT business. Lastly he determined the relative importance of each building block or type through a survey.\\
+		The result from Dijkman et al.'s research can be seen in Figure~\ref{fig:bm_dijkman}. The building blocks observed were equal to the building blocks from the Business Model Canvas described in Section~\ref{sec:bmc}. In order to `fill' the building blocks, the building block types presented by Osterwalder et al. in 2010 were, based on the interviews, merged, divided into multiple types, removed or extended by additional types \cite{osterwalder2010} \cite{dijkman}. The modified types can be seen in Figure ~\ref{fig:bm_dijkman} through the gray colored background.  
 
-		Dijkman then identified the building blocks and building block types of business models through the selected papers and interviews with professionals working in the IoT business. Lastly he determined the relative importance of each building block or type through a survey.
-
-		The result from Dijkman et al.'s research can be seen in Figure 1.z. The building blocks observed were equal to the building blocks from the business model canvas described in Section 1.4. The building block types differentiate the framework form classic canvas.
-
-		Based on the interviews and a survey the relative importance of each building block was determined. 
-
-		Dijkman's work showed, that `value proposition' is most important in IoT business models. Also as highly important were `customer relationship' and `key  partnerships' considered. 
-		\begin{figure}[h]
+		\begin{figure}[ht]
 			\begin{center}
-		    \includegraphics[scale=0.52]{Talk11/iot_canvas_rel_imp_dijkman.jpg}
+		    \includegraphics[scale=0.52]{Talk11/iot_canvas_dijkman.jpg}
 		    \end{center}
-		    \caption{Business model framework for IoT applications with relative importance of specific types. \# < 0.05 significance, * < 0.02 significance, **  < 0.01 significance.}
-		    \label{Business model for IoT}
+		    %\caption{Business model framework for IoT applications with relative importance of specific types. \# < 0.05 significance, * < 0.02 significance, **  < 0.01 significance.}
+		    \caption{Business model framework for IoT applications}
+		    \label{fig:bm_dijkman}
 		\end{figure}
+
+		Based on the interviews and a survey, the relative importance of each building block was determined. Dijkman et al.'s work showed, that `value proposition' is most important in IoT business models. Furthermore, `customer relationship' and `key  partnerships' were also considered as more important by the interviewees, all other blocks had comparable importance results with  `channels' being a bit less important.\\    
+		[TODO: wrapup][TODO: explain most significant building block types in detail]
 
 	\subsection{Value Design (Westerlund et al., 2014)}
 		Westerlund et al. moves from seeing IoT mainly as a technology platform to viewing it as a business ecosystem. Thus there is a shift from the traditional business model of a firm to designing ecosystem business models. Such an ecosystem business model is composed of value pillars, creating and capturing value. Westerlund identified three major challenges for designing ecosystem business models namely diversity of objects, immaturity of innovation and unstructured ecosystems.
@@ -203,82 +206,8 @@
 
 	\subsection{Three-dimensional collaborator Model (Chan, 2015)}
 
-
-	% \begin{itemize}
-	% 	\item Explain changes in Business Models due to IoT Development
-	% 		\begin{itemize}
-	% 				\item From ``Designing Business Models for the Internet of Things'' \cite{westerlund}
-	% 			\begin{itemize}
-	% 				\item Explains how ecosystem business models can be designed (Value Design) to show ``the dynamics between the components'' or ``ow the engine works''
-
-	% 				\begin{enumerate}[I]
-	% 					\item \textbf{Value Drivers}
-	% 					\begin{itemize}
-	% 						\item Individual motivations
-	% 						\item Shared motivations
-	% 					\end{itemize}
-	% 					\item \textbf{Value Nodes}
-	% 					\begin{itemize}
-	% 						\item Actors
-	% 						\item Activities
-	% 						\item (Automated) processes
-	% 					\end{itemize}
-	% 					\item \textbf{Value Exchanges}
-	% 					\begin{itemize}
-	% 						\item Resources
-	% 						\item Knowledge
-	% 						\item Money
-	% 						\item Information
-	% 					\end{itemize}
-	% 					\item \textbf{Value Extracts}
-	% 					\begin{itemize}
-	% 						\item Monetization
-	% 					\end{itemize}					
-	% 				\end{enumerate}
-	% 			\end{itemize}
-	% 			\item From ``IEEE-SA Internet of Things (IoT) Ecosystem Study'' \cite{cisco}
-	% 				\begin{itemize}
-	% 					\item IoT Ecosystem
-	% 						\begin{enumerate}[I]
-	% 							\item \textbf{Where does IoT stand today}
-	% 								\begin{itemize}
-	% 									\item Players
-	% 									\item Market
-	% 									\item Technology
-	% 									\item Standardization
-	% 								\end{itemize}
-	% 							\item \textbf{Business Model View}
-	% 								\begin{itemize}
-	% 									\item New segments
-	% 									\item Open issues / Insufficiency
-	% 								\end{itemize}		
-	% 						\end{enumerate}
-	% 				\end{itemize}
-	% 			\item From ``Business Models and the Internet of Things'' \cite{fleisch}
-	% 				\begin{itemize}
-	% 					\item Based on 55 different business models patterns \cite{gassmann}
-	% 					\item IoT Business Model 1: Digitally Charged Products
-	% 						\begin{itemize}
-	% 							\item A digitally charged product ``links digital services to physical products to create a hybrid bundle that is a single whole.''
-	% 							\item \textbf{Components}
-	% 								\begin{enumerate}[a]
-	% 									\item Business Model View
-	% 									\item Physical Freemium
-	% 									\item Digital Add-on
-	% 									\item Digital Lock-in
-	% 									\item Object Self Service
-	% 									\item Remote Usage and Condition Monitoring
-	% 								\end{enumerate}
-	% 						\end{itemize}
-	% 					\item IoT Business Model 2: Sensor as a Service
-	% 						\begin{itemize}
-	% 							\item A sensor as a service business model is based on ``collecting, processing and selling for a fee the sensor data [...]''.
-	% 						\end{itemize}
-	% 				\end{itemize}
-	% 		\end{itemize}
-	% \end{itemize}
-
 \section{Comparison of available IoT Business Model Frameworks using a case study}
+\label{sec:bmf_comparison}
 	In the following section, we will introduce a fictitious company in order to make it possible to compare the available business model frameworks and illustrate their respective strengths and weaknesses.
 
 	Business models for IoT differ from traditional business models. This section takes a look at what changed due to the emergence of IoT.
@@ -306,6 +235,7 @@
 	% \end{itemize}
 
 \section{Evaluations and Discussion}
+\label{sec:eval}
 	% \begin{itemize} 
 	% 	\item Partly based on outcome of discussion within the seminar
 	% 	\item Critical questions regarding the relevance of the results
@@ -313,6 +243,7 @@
 	% \end{itemize}
 
 \section{Summary and Conclusions}
+\label{sec:summary}
 	% \begin{itemize} 
 	% 	\item Summarize the paper content
 	% 	\item Show limitations of the paper
@@ -341,6 +272,10 @@
 	\bibitem {westerlund} M. Westerlund, S. Leminen and M. Rajahonka: \emph{Designing Business Models for the Internet of Things} Technology Innovation Management Review, July 2014, \url{http://timreview.ca/article/807}, last visit: October 06, 2016.
 
 	\bibitem {ju} Jaehyeon Ju, Mi-Seon Kim and Jae-Hyeon Ahn: \emph{Prototyping Business Models for IoT Service}, Procedia Computer Science, 91, pp. 882 - 890, 2016, \url{http://www.sciencedirect.com/science/article/pii/S1877050916312911}, last visit: October 06, 2016.
+ 	
+ 	\bibitem {tilley}  A. Tilley, Google Acquires Smart Thermostat Maker Nest For \$3.2 Billion. 2014  [cited 2016 May 15]; Available from: \url{http://www.forbes.com/sites/aarontilley/2014/01/13/google-acquires-nest-for-3-2-billion/#7049b3181416}
+ 	
+ 	\bibitem {gartner}  Gartner. 4.9 Billion Connected ``Things'' Will Be in Use in 2015. 2014  [cited 2016 May 15]; Available from: \url{http://www.gartner.com/newsroom/id/2905717}
 
 	\bibitem {chan} TODO
 
@@ -349,5 +284,8 @@
 	\bibitem {Atzori} TODO
 
 	\bibitem {osterwalder2005} TODO
+
+	\bibitem {osterwalder2010} TODO
+
  \end{thebibliography}
 
